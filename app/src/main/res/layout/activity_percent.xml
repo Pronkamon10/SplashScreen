@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.kimhuang.splashscreen.percent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/viewLeft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:background="#FF6715"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%"/>
+
+        <View
+            android:id="@+id/viewRight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/viewLeft"
+            android:background="#E861D6"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%"/>
+
+        <View
+            android:id="@+id/viewbottonLeft"
+            android:layout_below="@+id/viewLeft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#aaff"
+            app:layout_heightPerent="50%"
+            app:layout_widthPercent="50%"/>
+
+        <View
+            android:id="@+id/viewbottonRight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/viewRight"
+            android:layout_toRightOf="@id/viewbottonLeft"
+            android:background="#aff5051d"
+            app:layout_heightPerent="50%"
+            app:layout_widthPercent="50%" />
+
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>
